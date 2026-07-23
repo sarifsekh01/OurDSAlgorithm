@@ -1,0 +1,54 @@
+problem statement:02
+Write a program to create a 2D array by accepting the number of rows, columns, and elements from the user, and then display the array.
+
+code:
+
+#include <stdio.h>
+
+int main() {
+    int arr[10][10];
+    int rows, cols;
+    int i, j;
+
+    // Input rows and columns
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter the number of columns: ");
+    scanf("%d", &cols);
+
+    // Input array elements
+    printf("Enter the elements of the array:\n");
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+
+    // Display the array
+    printf("\nThe 2D Array is:\n");
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+output:
+
+Enter the number of rows: 3
+Enter the number of columns: 2
+Enter the elements of the array:
+11
+22
+33
+44
+21
+32
+
+The 2D Array is:
+11 22 
+33 44 
+21 32 
