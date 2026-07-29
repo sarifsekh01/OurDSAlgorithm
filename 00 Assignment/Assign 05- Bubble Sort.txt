@@ -1,0 +1,4 @@
+Problem Statement : 05
+Write a C program to accept n
+
+<>code:

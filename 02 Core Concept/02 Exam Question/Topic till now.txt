@@ -1,0 +1,4 @@
+1.  What is Algorithm + characterstic of Algorithm + exmplae + universal algorithm pattern
+2. Array + characterstic + operation (insertion/deletion/updation/travasion/searching/sorting) +Advantage & Disadvantage + Application
+3. Complexity - Time & Space
+4. 
