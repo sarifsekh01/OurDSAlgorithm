@@ -1,5 +1,5 @@
 1.  What is Algorithm + characterstic of Algorithm + exmplae + universal algorithm pattern
-2. Array + characterstic + operation (insertion/deletion/updation/travasion/searching/sorting) +Advantage & Disadvantage + Application
+2. Array (1D ,2D )+ characterstic + operation (insertion/deletion/updation/travasion/searching/sorting) +Advantage & Disadvantage + Application
 3. Complexity - Time & Space
 4. Sparce Matrix + example +why need
 5. Linear Search + How work + Advantage and Disadvantage + Algorithm + time Complexity

@@ -50,3 +50,13 @@ int main()
 }
 
 output:
+
+Enter number of elements: 5
+Enter 5 sorted elements:
+64
+25
+15
+54
+52
+Enter element to search: 15
+Element found at index 2

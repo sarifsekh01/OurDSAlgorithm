@@ -1,0 +1,18 @@
+Q1. whatis Array ? characteristic , operation, Advantage & Disadvantage, Application ????
+
+Q2. what is 2D array , What is the Different representation of an Array ?????
+
+Q3. 
+
+
+
+
+
+
+Q1. Write the Algorithm for push and pop operationon Stack??        (2.5+2.5)
+
+Q2. What are the application of a Stack??     (5)
+and , A stack is Initially empty perform the following operation - push(10),push(20),push(30),pop(),push(40),peek()                
+       i) What is the final Stack ??
+       ii) Which element is returned by peek ??
+       iii) what is the value of top ???? 

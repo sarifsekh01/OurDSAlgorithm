@@ -33,3 +33,13 @@ int main() {
 
     return 0;
 }
+
+output:
+Enter the number of elements: 5
+Enter the elements: 12
+45
+68
+75
+25
+Enter the element to search: 75
+Element found at position 4
