@@ -1,4 +1,4 @@
-assignment 12
+assignment 10
 Write a C program to implement a stack using an array and perform basic operations using a menu-driven approach.
 
 #include <stdio.h>
