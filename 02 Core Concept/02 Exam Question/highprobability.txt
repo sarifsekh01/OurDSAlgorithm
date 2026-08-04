@@ -16,3 +16,5 @@ and , A stack is Initially empty perform the following operation - push(10),push
        i) What is the final Stack ??
        ii) Which element is returned by peek ??
        iii) what is the value of top ???? 
+
+Q. Array element are [22 12 9 13 2 17 7] find the after FIVE(5th) pass using Selection Sort?

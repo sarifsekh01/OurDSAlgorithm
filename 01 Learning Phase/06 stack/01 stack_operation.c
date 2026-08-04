@@ -1,0 +1,102 @@
+#include <stdio.h>
+
+#define MAX 5
+
+int stack[MAX];
+int top = -1;
+
+// Push operation
+void push() {
+    int x;
+    if (top == MAX - 1) {
+        printf("Stack Overflow\n");
+    } else {
+        printf("Enter value: ");
+        scanf("%d", &x);
+        top++;
+        stack[top] = x;
+    }
+}
+
+// Pop operation
+void pop() {
+    if (top == -1) {
+        printf("Stack Underflow\n");
+    } else {
+        printf("Deleted element: %d\n", stack[top]);
+        top--;
+    }
+}
+
+// Display stack
+void display() {
+    if (top == -1) {
+        printf("Stack is empty\n");
+    } else {
+        printf("Stack elements:\n");
+        for (int i = top; i >= 0; i--) {
+            printf("%d\n", stack[i]);
+        }
+    }
+}
+
+int main() {
+    int choice;
+
+    while (1) {
+        printf("\n--- STACK MENU ---\n");
+        printf("1. Push\n2. Pop\n3. Display\n4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1: push(); break;
+            case 2: pop(); break;
+            case 3: display(); break;
+            case 4: return 0;
+            default: printf("Invalid choice\n");
+        }
+    }
+}
+
+// output:
+//  --- STACK MENU ---
+// 1. Push
+// 2. Pop
+// 3. Display
+// 4. Exit
+// Enter your choice: 2
+// Stack Underflow
+
+// --- STACK MENU ---
+// 1. Push
+// 2. Pop
+// 3. Display
+// 4. Exit
+// Enter your choice: 1
+// Enter value: 11
+
+// --- STACK MENU ---
+// 1. Push
+// 2. Pop
+// 3. Display
+// 4. Exit
+// Enter your choice: 3
+// Stack elements:
+// 11
+
+// --- STACK MENU ---
+// 1. Push
+// 2. Pop
+// 3. Display
+// 4. Exit
+// Enter your choice: 2
+// Deleted element: 11
+
+// --- STACK MENU ---
+// 1. Push
+// 2. Pop
+// 3. Display
+// 4. Exit
+// Enter your choice: 3
+// Stack is empty
