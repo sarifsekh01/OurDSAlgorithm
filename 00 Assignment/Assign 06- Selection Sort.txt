@@ -1,0 +1,20 @@
+Assignment : 06
+Write a C program to sort an array of integer in ascending order using the selection sort algorithm.
+
+<> code :
+
+
+#include <stdio.h>
+int main(){
+    int arr[100],n,i,j,low;
+
+    printf("Enter Number of elements: ");
+    scanf("%d",&n);
+
+    for(i=0; i<n; i++){
+        scanf("%d",&arr[i]);
+    }
+
+    // Algorithm of Selection sort
+    
+}
