@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
 
-    //Define Array .......
+    //Input Array .......
     int array[100],n,i;
 
     printf("Eneter Array Size: \n");
