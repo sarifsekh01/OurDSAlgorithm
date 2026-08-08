@@ -1,0 +1,13 @@
+Programminig Language -C
+
+variable , scope of variable (static , global, local)
+parameter (actual , formal )
+
+
+----------->1. Operators
+----------->2. Conditions (if-else)
+----------->3. Loops(for, while )
+
+----------->4. Function (declaration, define, call)
+----------->5. Array
+----------->6. Pointers

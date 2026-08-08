@@ -1,13 +1,17 @@
-Q1. whatis Array ? characteristic , operation, Advantage & Disadvantage, Application ????
+Q0. What is Algorithm , characteristic of Algorithm??
+
+Q1. what is Array ? characteristic , operation, Advantage & Disadvantage, Application ????
 
 Q2. what is 2D array , What is the Different representation of an Array ?????
 
-Q3. 
+Q3. What is Sparse Matrix with example + Why need ???????
 
+Q4. A 2D Array a[4][5] is Stored in "row major" Order the base address of the array is 1000, and each element occupy 4 byte find the memory address of a[2][3] ??
+Q5. A 2D Array b[6][4] is Stored in "column major" Order the base address of the array is 5000, and each element occupy 2 byte find the memory address of b[4][2] ??
 
-
-
-
+Q6. How to Binary search work ( explain the process )? + advantage & disadvantage ?+ algorithm ,best worst,time complxity ? 
+Q7. How to Linear search work ( explain the process )? + advantage & disadvantage ?+ algorithm ,best worst,time complxity ? 
+Q8. Different between Linear Search & Binary Search ???????
 
 Q. Write the Algorithm for push and pop operationon Stack??        (2.5+2.5)
 
@@ -22,3 +26,4 @@ Q. If an array has n element
                      i) how maney passes are Require? ---> n-1
                      ii) what is the maximum number of sowap ? ---> n-1
                      iii) how maney comparison are performs ? ---> n*(n-1)/2
+

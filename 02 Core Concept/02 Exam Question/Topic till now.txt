@@ -4,9 +4,12 @@
 4. Sparce Matrix + example +why need
 5. Linear Search + How work + Advantage and Disadvantage + Algorithm + time Complexity
 6. Binary Search + How Work (process explain)+ advantage and Disadvantage + Algorithm +Time Complexity (best/wost) 
-7. Bubble sort ??
-8. Stack??
-
+7. Bubble sort -- code part
+8. Stack- what + application + example + algorithm for push & pop operation  
+9. infix, postfix, prefix --> algorithm + infix<---->postfix & infix <---->prefix coversion + example
+10. Selection sort -  code part
+11. Insertion sort -- code part
+12. 
 
 
 
