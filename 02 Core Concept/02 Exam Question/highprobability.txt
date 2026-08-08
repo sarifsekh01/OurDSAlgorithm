@@ -20,6 +20,8 @@ and , A stack is Initially empty perform the following operation - push(10),push
        i) What is the final Stack ??
        ii) Which element is returned by peek ??
        iii) what is the value of top ???? 
+Q. i) (A+B)*(C-D)      ii) (A+B)*(C/D+E-F*G)     iii)Infix-->postfix ==> A+(B*C-(D/E^F)*G)*H
+Q. coversion: i)infix to Postfix( 2*2), ii) infix to Prefix(2*2)??????/ 
 
 Q. Array element are [22 12 9 13 2 17 7] find the after FIVE(5th) pass using Selection Sort?
 Q. If an array has n element 
