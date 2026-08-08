@@ -20,6 +20,7 @@ int main()
         scanf("%d", &array[i]);
     }
 
+    // Operation(Sum, Search, Sort, max, insertion, Deletion, Update, etc..)
 
 
     // 3. Displaying the Element
@@ -45,6 +46,8 @@ int main()
     for (i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
+
+    //Operation(Sum, Search, Sort, max, insertion, Deletion, Update, etc..)
 
     printf("Your Arry Elements are: ");
     for (i=0; i<n; i++){
