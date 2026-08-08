@@ -5,16 +5,48 @@ Write a C program to sort an array of integer in ascending order using the selec
 
 
 #include <stdio.h>
-int main(){
-    int arr[100],n,i,j,low;
 
-    printf("Enter Number of elements: ");
-    scanf("%d",&n);
+int main() {
+    int a[100], n, i, j, min, temp;
 
-    for(i=0; i<n; i++){
-        scanf("%d",&arr[i]);
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter the elements:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
     }
 
-    // Algorithm of Selection sort
-    
+    // Selection Sort
+    for (i = 0; i < n - 1; i++) {
+        min = i;
+
+        for (j = i + 1; j < n; j++) {
+            if (a[j] < a[min]) {
+                min = j;
+            }
+        }
+
+        temp = a[i];
+        a[i] = a[min];
+        a[min] = temp;
+    }
+
+    printf("Sorted array:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d ", a[i]);
+    }
+
+    return 0;
 }
+
+output:
+
+Enter total Element: 5
+Enter Your 5 element: 
+12
+54
+85
+2
+45
+Your Sorted Array is: 2 12 45 54 85 
