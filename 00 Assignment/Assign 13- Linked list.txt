@@ -1,0 +1,133 @@
+Assignment  13: 
+Write a C program to create a singly linked list by inserting elements into the list, display the data stored in each node, and delete an element from the linked list.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct student
+{
+    int marks;
+    struct student *next;
+};
+
+int main()
+{
+    struct student *head = NULL;
+    struct student *temp = NULL;
+
+    int ch, value;
+
+    while (1)
+    {
+        printf("\n1. Add item\n");
+        printf("2. Display items\n");
+        printf("3. Delete item\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &ch);
+
+        /* Add item */
+        if (ch == 1)
+        {
+            struct student *new;
+
+            new = (struct student *)malloc(sizeof(struct student));
+
+            printf("Enter marks: ");
+            scanf("%d", &new->marks);
+
+            new->next = NULL;
+
+            if (head == NULL)
+            {
+                head = new;
+                temp = new;
+            }
+            else
+            {
+                temp->next = new;
+                temp = new;
+            }
+
+            printf("\nMarks is inserted\n");
+        }
+
+        /* Display items */
+        else if (ch == 2)
+        {
+            struct student *p = head;
+
+            printf("\nThe marks are:\n");
+
+            while (p != NULL)
+            {
+                printf("%d --> ", p->marks);
+                p = p->next;
+            }
+
+            printf("NULL\n");
+        }
+
+        /* Delete item */
+        else if (ch == 3)
+        {
+            struct student *p = head;
+            struct student *prev = NULL;
+
+            printf("Enter marks to delete: ");
+            scanf("%d", &value);
+
+            /* If list is empty */
+            if (head == NULL)
+            {
+                printf("List is empty\n");
+            }
+
+            /* Delete first node */
+            else if (head->marks == value)
+            {
+                head = head->next;
+                free(p);
+
+                printf("Item deleted successfully\n");
+            }
+
+            /* Delete middle or last node */
+            else
+            {
+                while (p != NULL && p->marks != value)
+                {
+                    prev = p;
+                    p = p->next;
+                }
+
+                if (p == NULL)
+                {
+                    printf("Item not found\n");
+                }
+                else
+                {
+                    prev->next = p->next;
+                    free(p);
+
+                    printf("Item deleted successfully\n");
+                }
+            }
+        }
+
+        /* Exit */
+        else if (ch == 4)
+        {
+            printf("Thank you\n");
+            break;
+        }
+
+        else
+        {
+            printf("Invalid choice\n");
+        }
+    }
+
+    return 0;
+}
+
