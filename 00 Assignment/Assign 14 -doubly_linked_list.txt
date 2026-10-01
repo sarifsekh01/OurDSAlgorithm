@@ -1,0 +1,212 @@
+Write a C program to create a doubly linked list by inserting elements into the list, display the data stored in each node, and delete an element from the linked list.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node *prev;
+    struct Node *next;
+};
+
+struct Node *head = NULL;
+
+// Insert at the end
+void insert() {
+    int value;
+    struct Node *newNode, *temp;
+
+    printf("Enter value: ");
+    scanf("%d", &value);
+
+    newNode = (struct Node *)malloc(sizeof(struct Node));
+
+    newNode->data = value;
+    newNode->prev = NULL;
+    newNode->next = NULL;
+
+    if (head == NULL) {
+        head = newNode;
+    } else {
+        temp = head;
+
+        while (temp->next != NULL)
+            temp = temp->next;
+
+        temp->next = newNode;
+        newNode->prev = temp;
+    }
+
+    printf("Node inserted successfully.\n");
+}
+
+// Delete a node
+void deleteNode() {
+    int value;
+    struct Node *temp;
+
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
+
+    printf("Enter value to delete: ");
+    scanf("%d", &value);
+
+    temp = head;
+
+    // Search for the node
+    while (temp != NULL && temp->data != value)
+        temp = temp->next;
+
+    if (temp == NULL) {
+        printf("Value not found.\n");
+        return;
+    }
+
+    // If deleting the first node
+    if (temp == head) {
+        head = temp->next;
+
+        if (head != NULL)
+            head->prev = NULL;
+    } else {
+        temp->prev->next = temp->next;
+
+        if (temp->next != NULL)
+            temp->next->prev = temp->prev;
+    }
+
+    free(temp);
+
+    printf("Node deleted successfully.\n");
+}
+
+// Display the list
+void display() {
+    struct Node *temp;
+
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
+
+    temp = head;
+
+    printf("Doubly Linked List: ");
+
+    while (temp != NULL) {
+        printf("%d", temp->data);
+
+        if (temp->next != NULL)
+            printf(" <-> ");
+
+        temp = temp->next;
+    }
+
+    printf("\n");
+}
+
+// Main function
+int main() {
+    int choice;
+
+    while (1) {
+        printf("\n--- DOUBLY LINKED LIST ---\n");
+        printf("1. Insert\n");
+        printf("2. Delete\n");
+        printf("3. Display\n");
+        printf("4. Exit\n");
+
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                insert();
+                break;
+
+            case 2:
+                deleteNode();
+                break;
+
+            case 3:
+                display();
+                break;
+
+            case 4:
+                printf("Program terminated.\n");
+                exit(0);
+
+            default:
+                printf("Invalid choice.\n");
+        }
+    }
+
+    return 0;
+}
+
+
+
+output:
+
+--- DOUBLY LINKED LIST ---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter value: 11
+Node inserted successfully.
+
+--- DOUBLY LINKED LIST ---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter value: 123
+Node inserted successfully.
+
+--- DOUBLY LINKED LIST ---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 3
+Doubly Linked List: 11 <-> 123
+
+--- DOUBLY LINKED LIST ---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter value: 234
+Node inserted successfully.
+
+--- DOUBLY LINKED LIST ---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+Enter value to delete: 123
+Node deleted successfully.
+
+--- DOUBLY LINKED LIST ---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 3
+Doubly Linked List: 11 <-> 234
+
+--- DOUBLY LINKED LIST ---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 
+
+=== Session Ended Due To Inactivity ===
